@@ -18,7 +18,7 @@ const AppointmentNotBooked = () => {
         const [data,setData]=useState();
         const [flag,setFlag]=useState();
         const {language, setLanguage}=usePageContext();
-        const [showPopUp,setShowPopUp]=useState();
+        const {showEdit, setEdit}= usePageContext();
 
         const {showDelete, setShowDelete}= usePageContext();
         const {appotmentId,setappotmentId}= usePageContext();
@@ -111,7 +111,7 @@ const AppointmentNotBooked = () => {
             <ScrollView style={{backgroundColor:darkMood ? '#161616' : 'white'}}  contentContainerStyle={{ justifyContent: 'flex-start', flexWrap:'wrap',flexDirection: 'row'}} >
         
             {showDelete&&<PopUpSys></PopUpSys>} 
-            
+            {showEdit&&<PopUpSys type={"edit"}></PopUpSys>}
             {flag&&!showDelete&&appointmentGenrate("past",data)}
             
             </ScrollView> 

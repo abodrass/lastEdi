@@ -11,6 +11,7 @@ const AppointmentBoxs = (props) => {
     const {language,setLanguage}= usePageContext();
     const {token}=usePageContext();
     const {showDelete, setShowDelete}= usePageContext();
+    const {showEdit, setEdit}= usePageContext();
     const {appotmentId,setappotmentId}= usePageContext();
     let boxType=!language?styles.dateBox:styles.dateBoxSAr;
     let dateTextColor=darkMood?"#fff":"#8da393";
@@ -29,7 +30,8 @@ const AppointmentBoxs = (props) => {
         };
 
         const handelEdit=()=>{
-
+            setappotmentId(props.id);
+            setEdit(true);
         }
     
 

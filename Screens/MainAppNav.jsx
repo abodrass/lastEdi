@@ -21,6 +21,7 @@ import Dashbord from './mainApp/Dashbord/Dashbords';
 import Main from './MainPage/Main';
 import Notes from './mainApp/notes/Notes';
 import Location from './mainApp/location/Location';
+import ComingSoon from './mainApp/comingSoon/ComingSoon';
 const Tab = createBottomTabNavigator();
 
 const TabGroup =(props)=>{
@@ -64,6 +65,7 @@ const TabGroup =(props)=>{
           }}
           
         />
+
       </Stack.Navigator>
     );
   };

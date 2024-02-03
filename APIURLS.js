@@ -18,5 +18,7 @@ export const url={
     GetAllRejectAppointmentBookedForDentist:"http://192.168.1.241:5126/AppointmentBookedAPI/GetAllActiveAppointmentBookedForDentist?Status=Closed",
     CreateTokenAndSaveUserOnDb:"http://192.168.1.241:5126/UserAPI/CreateTokenAndSaveUserOnDb",
     ResetPassword:"http://192.168.1.241:5126/UserAPI/ResetPassword",
-    ConfirmResetPassword:"http://192.168.1.241:5126/UserAPI/ConfirmResetPassword"
+    ConfirmResetPassword:"http://192.168.1.241:5126/UserAPI/ConfirmResetPassword",
+    GetAppointmentById:"http://192.168.1.241:5126/AppointmentAPI/GetAppointmentById",
+    UpdateAppointmentid:"http://192.168.1.241:5126/AppointmentAPI/UpdateAppointment"
 }

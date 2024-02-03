@@ -13,6 +13,7 @@ export const PageProvider = ({ children }) => {
   const [userRole,setUserRole]=useState();
   const [headerTitel,setHeaderTitel]=useState("main page");
   const [showDelete, setShowDelete] = useState(false); // Keep an empty string for token initially
+  const [showEdit, setEdit] = useState(false);
   const [appotmentId,setappotmentId]=useState();
   const [changeAprvelApp,setchangeAprvelApp]=useState(false);
   useEffect(() => {
@@ -66,7 +67,12 @@ export const PageProvider = ({ children }) => {
 
 
   return (
-    <PageContext.Provider value={{ darkMood, setDarkMood, language, setLanguage, tokenFlag, setTokenFlag, token, setToken,userRole,setUserRole,appotmentId,setappotmentId,showDelete, setShowDelete,changeAprvelApp,setchangeAprvelApp ,headerTitel,setHeaderTitel}}>
+    <PageContext.Provider value={{ darkMood, setDarkMood, language, setLanguage, 
+    tokenFlag, setTokenFlag, token, setToken,
+    userRole,setUserRole,appotmentId,setappotmentId,
+    showDelete, setShowDelete,
+    changeAprvelApp,setchangeAprvelApp ,
+    headerTitel,setHeaderTitel,showEdit, setEdit}}>
       {children}
     </PageContext.Provider>
   );
