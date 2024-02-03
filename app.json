@@ -1,0 +1,46 @@
+{
+  "expo": {
+    
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+
+    "name": "graduationProject3",
+    "slug": "graduationProject3",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo-removebg-preview.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "width":"%20"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo-removebg-preview.png",
+        "backgroundColor": "#ffffff",
+        "resizeMode": "contain",
+        "width":"%30"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
